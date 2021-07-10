@@ -1,10 +1,7 @@
 
-<%= flash[:notice] %>
+<p class=a><%= flash[:notice] %></p>
 
 <h1>Books</h1>
-
-
-
 
   <table>
     <thead>
@@ -24,13 +21,13 @@
           <span><%= book.body %></span>
         </td>
         <td>
-          <%= link_to "show", book_path(book.id) %>
+          <%= link_to "Show", book_path(book.id) %>
         </td>
         <td>
-          <%= link_to "edit", "/books/#{book.id}/edit" %>
+          <%= link_to "Edit", "/books/#{book.id}/edit" %>
         </td>
         <td>
-          <%= link_to "destroy", "/books/#{book.id}", method: :delete %>
+          <%= link_to "Destroy", "/books/#{book.id}", method: :delete %>
         </td>
       </tr>
 
@@ -39,7 +36,6 @@
   </table>
 
 
- 
 
 <h2>New book</h2>
 
