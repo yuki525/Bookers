@@ -37,6 +37,7 @@
 
 <div class=a>
   <% if @book.errors.any? %>
+  <p class=c>error</p>
   <% @book.errors.full_messages.each do |message| %>
     <p class=b><%= message %></p>
   <% end %>
